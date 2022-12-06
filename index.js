@@ -27,8 +27,8 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/register",(req,res)=>{
-	//const {username,password}=req.body;
-	const email="user1@gmail.com",passcode="7654"
+	const {email,passcode}=req.body;
+	//const email="user1@gmail.com",passcode="7654"
 	const newFrontendUser=new Register({
 		username:email,
 		password:passcode
